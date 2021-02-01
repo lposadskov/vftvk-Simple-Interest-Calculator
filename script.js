@@ -8,7 +8,8 @@ function compute()
     var endyear = new Date().getFullYear() + years;
     document.getElementById("result").innerHTML = "If you deposit "+principal+",\nat an interest rate of "+rate+"%.\nYou will receive an amount of "+interest+",\nin a year " + endyear;
 }
-document.getElementById("rate").onchange() = function()
+function rateUpdate()
 {
+    var rate = document.getElementById("rate").value;
     document.getElementById("rateres").innerHTML = rate + "%";    
 }        
