@@ -9,9 +9,9 @@
 	<div class="maindiv">
         <h1>Simple Interest Calculator</h1>
 
-        	Amount <input type="number"  id="principal">  <br/>
+        	Amount <input type="number"  id="principal" value="1000000">  <br>
         	Rate <input type="range"  id="rate" min="1" max="20" value="10.25" step="0.25">
-		<span id="rateres">10.25%</span><br>
+		<span id="rateres" onchange="rateUpdate()">10.25%</span><br>
 		No. of Years<select id="years">
 			<option value="1">1</option>
 			<option value="2">2</option>
@@ -23,7 +23,7 @@
 			<option value="8">8</option>
 			<option value="9">9</option>
 			<option value="10">10</option>
-		</select><br/>
+		</select><br>
         	<button onclick="compute()">Compute Interest</button><br>
 		<span id="result">Result</span>
 	</div>
