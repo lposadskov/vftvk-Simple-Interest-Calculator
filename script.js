@@ -5,7 +5,7 @@ function compute()
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
     var endyear = new Date().getFullYear() + parseInt(years, 10);
-    if (parseInt(principal,10) >= 0)
+    if (parseInt(principal,10) <= 0)
     {
         alert("Enter a positive number");
 	document.getElementById("principal").focus();
