@@ -8,6 +8,7 @@ function compute()
     if (parseInt(principal,10) >= 0)
     {
         alert("Enter a positive number");
+	document.getElementById("principal").focus();
     }
     else
     {
