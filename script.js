@@ -6,7 +6,7 @@ function compute()
     var years = document.getElementById("years").value;
     var endyear = new Date().getFullYear() + parseInt(years, 10);
     //principal value check
-    if (parseInt(principal,10) <= 0 && !(Number.isInteger(parseInt(principal,10))) && principal == "")
+    if (parseInt(principal,10) <= 0 || !(Number.isInteger(parseInt(principal,10))) || principal == "")
     {
         alert("Enter a positive number");
 	document.getElementById("principal").focus();
